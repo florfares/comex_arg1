@@ -48,9 +48,9 @@ serve = app.server
 
 # In[9]:
 
-lista_base_sectores=['wgt_mip97RRNN AGRO.xlsx' , 'wgt_mip97RRNN OTROS.xlsx' , 'wgt_mip97BT TEXTILES.xlsx' , 
-    'wgt_mip97BT OTROS.xlsx' , 'wgt_mip97MT AUTOMOTRIZ.xlsx' , 'wgt_mip97MT INGENIERIA.xlsx' , 'wgt_mip97MT PROCESOS.xlsx' , 
-    'wgt_mip97HT ELECTRONICO Y ELECTRICO.xlsx' , 'wgt_mip97HT OTROS.xlsx', 'wgt_mip97PP.xlsx']
+lista_base_sectores=['wgt_mip97RRNN_AGRO.xlsx' , 'wgt_mip97RRNN_OTROS.xlsx' , 'wgt_mip97BT_TEXTILES.xlsx' , 
+    'wgt_mip97BT_OTROS.xlsx' , 'wgt_mip97MT_AUTOMOTRIZ.xlsx' , 'wgt_mip97MT_INGENIERIA.xlsx' , 'wgt_mip97MT_PROCESOS.xlsx' , 
+    'wgt_mip97HT_ELECTRONICO_Y_ELECTRICO.xlsx' , 'wgt_mip97HT_OTROS.xlsx', 'wgt_mip97PP.xlsx']
 
 orden=[9,0,1,2,3,4,5,6,7,8]
 lista_base_sectores=[lista_base_sectores[i] for i in orden] #ordenar los sectores
