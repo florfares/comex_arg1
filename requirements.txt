@@ -4,3 +4,4 @@ gunicorn
 dash_bootstrap_components
 plotly.express
 flask==2.2.0
+Werkzeug==2.2.2
