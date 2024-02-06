@@ -344,7 +344,7 @@ texto1_sec2='''
 ## ¿Quiénes demandan y quiénes compran?
 En esta segunda sección, te muestro la evolución de la cantidad de empresas exportadoras y la composición que tiene la demanda de importaciones en Argentina. En el primer caso, los datos disponibles me limitaron para mantener la desagregación por contenido tecnológico, y los datos sobre la demanda de importaciones se corresponden con la matriz insumo-producto de 1997. Si bien existen algunas versiones más recientes de la matriz producidas por la CEPAL e ICIO, son extrapolaciones realizadas por investigaciones independientes ya que el gobierno argentino no ha vuelto a actualizar los datos oficiales. Cuando se observa la composicion sectorial, como en el apartado anterior, es evidente que no hubo grandes cambios estructurales para ninguno de los flujos. Esto me lleva a suponer que tampoco lo hubo entre los demandantes de importaciones, más no es posible probarlo. Por esto, me parece necesario que se actualicen estos datos ya que son una foto de las transacciones intra e intersectoriales de la economia en su conjunto.
 
-Por otro lado, trabajar con matrices insumo-producto permite computar no solo la demanda directa de importaciones (por ejemplo, una persona que vive en Argentina e importa un libro), sino también la indirecta (por ejemplo, una firma argentina que importa insumos para producir un bien o servicio que tiene como destino al consumidor final). Esto requiere de un manejo específico sobre matrices y sus transformaciones. Mi trabajo se basó en lo realizado por Bussière **et al.** (2013), por si queres consultarlo.
+Por otro lado, trabajar con matrices insumo-producto permite computar no solo la demanda directa de importaciones (por ejemplo, una persona que vive en Argentina e importa un libro), sino también la indirecta (por ejemplo, una firma argentina que importa insumos para producir un bien o servicio que tiene como destino al consumidor final). Esto requiere de un manejo específico sobre matrices y sus transformaciones. Mi trabajo se basó en lo realizado por Bussière *et al.* (2013), por si queres consultarlo.
 
 El siguiente gráfico permite observar la evolución temporal de la cantidad de empresas exportadoras argentina. La industria manufacturera resalta a simple vista. Sin embargo, no debemos dejarnos engañar por las escalas, porque si bien se observa un fuerte crecimiento entre 2003-2008, esto podría verse afectado por el nivel base de comparación.
 
@@ -353,7 +353,7 @@ El siguiente gráfico permite observar la evolución temporal de la cantidad de 
 texto2_sec2='''
 Como destaca el siguiente gráfico, ahora es más evidente que la tasa de crecimiento de las empresas exportadoras (es decir, el porcentaje de incremento de la cantidad de empresas exportadoras cada año -ojo, si es negativo significa que hay empresas que dejan de exportar) es mucho más pareja entre los sectores. El nivel nos estaba engañando en el gráfico anterior.
 
-Entre 2004-2008 se mantienen las tasas positivas de crecimiento en todos los sectores, y lo contrario sucede desde 2013 en adelante. El declive que se observa en el gráfico anterior al final del periodo corresponde al 2018. Aquí es evidente la estrepitosa del crecimiento exportador en todos los sectores.
+Entre 2004-2008 se mantienen las tasas positivas de crecimiento en todos los sectores, y lo contrario sucede desde 2013 en adelante. El declive que se observa en el gráfico anterior al final del periodo corresponde al 2018. Aquí es evidente la estrepitosa caida del crecimiento exportador en todos los sectores.
 '''
 
 texto3_sec2='''
@@ -383,7 +383,7 @@ texto_conclu='''
 ## Comentarios finales
 En definitiva, en este documento descriptivo intenté mostrar cómo ha sido la evolución reciente del comercio exterior argentino, su composición sectorial y territorial. Creo que hay mucho espacio para la mejora en este sentido y hoy es el momento de definir las reglas que nos van a permitir crecer de manera sostenible.
 
-Particularmente, siempre me gustaron los tópicos relacionados al sector externo. En mis inicios en la investigación, realicé una estimación de los precios de las exportaciones e importaciones a niveles desagregados por tipos de productos y luego, avancé con la estimación de las elasticidades del comercio exterior. En @fares_sectoral_2020 pueden encontrar la metodología que empleé para calcular los indices de valor unitario, que, por cierto, es el único trabajo que ha provisto de esta importante información estadística ya que no hay datos oficiales.
+Particularmente, siempre me gustaron los tópicos relacionados al sector externo. En mis inicios en la investigación, realicé una estimación de los precios de las exportaciones e importaciones a niveles desagregados por tipos de productos y luego, avancé con la estimación de las elasticidades del comercio exterior. En Fares, Zack y Martinez (2020) pueden encontrar la metodología que empleé para calcular los indices de valor unitario, que, por cierto, es el único trabajo que ha provisto de esta importante información estadística ya que no hay datos oficiales.
 
 Los desafios asociados al sector externo siempre me han parecido un tema desafiante y más que relevante para mi pais. Hoy en día en mi curso de Análisis Económico Aplicado tratamos estos temas. No solo revisamos los avances teóricos sobre la estimación de indices de valor unitario, las elasticidades del comercio exterior, las crisis de balanza de pagos y, más en general, las estadisticas del sector externo, sino que además trabajamos en Stata con los .do files para ver "la cocina" de los trabajos académicos. Creo que de esa forma contribuyo a que más personas se acerquen a la investigación, o más bien, que la disciplina muestre todo lo que puede aportar a las discusiones que deben darse en la sociedad.
 
@@ -603,28 +603,4 @@ def update_prov_graph(provincia):
 
 if __name__=='__main__':
      app.run_server(debug=True)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
