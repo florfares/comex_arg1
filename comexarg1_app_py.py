@@ -56,7 +56,7 @@ orden=[9,0,1,2,3,4,5,6,7,8]
 lista_base_sectores=[lista_base_sectores[i] for i in orden] #ordenar los sectores
 lista_base_sectores
 
-df=pd.read_excel('/data/'+lista_base_sectores[0])
+df=pd.read_excel('https://github.com/florfares/comex_arg1/data/'+lista_base_sectores[0])
 df.index=[lista_base_sectores[0].replace('wgt_mip97','').replace('.xlsx','') for i in range(df.shape[0])] 
       #de esta forma genero una lista con la cantidad de obs necesarias (cant. de filas) para el indice con el nombre del sector. 
 df
