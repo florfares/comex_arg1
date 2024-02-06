@@ -229,7 +229,7 @@ mapa=dbc.NavItem(
 
 # In[15]:
 #cargar base de datos
-df_indec=pd.read_excel(url+'indec.xlsx', sheet_name='hoja3') #importo base
+df_indec_empresas=pd.read_excel(url+'indec.xlsx', sheet_name='hoja3') #importo base
 df_indec_empresas=df_indec_empresas.iloc[:,1:8] #selecciono
 df_group_año=df_indec_empresas.groupby(['año']).sum() #agrupo
 df_empresas=df_group_año.melt(ignore_index=False).reset_index() #reshapeo wide to long
