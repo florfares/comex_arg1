@@ -153,7 +153,7 @@ trade_fig = px.bar(base_sector,
 
 # cargar base
 
-df_indec=pd.read_excel(url+'indec.xlsx', sheet_name='hoja2') #importo base
+df_indec_prov=pd.read_excel(url+'indec.xlsx', sheet_name='hoja2') #importo base
 df_indec=df_indec_prov.iloc[1:,:]
 df_indec['FECHA']=df_indec['FECHA'].astype(int)
 df_indec=df_indec.set_index('FECHA')
