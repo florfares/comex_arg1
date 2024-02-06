@@ -5,9 +5,6 @@
 
 # In[7]:
 
-
-import os
-
 # !pip install dash # si la libreria no esta instalada
 from dash import Dash, html, dcc, Input, Output
 import plotly.express as px
@@ -18,8 +15,6 @@ import dash_bootstrap_components as dbc
 # import dash_html_components as html #The dash_html_components package is deprecated
 
 import pandas as pd
-import numpy as np
-
 
 # ## Design
 
@@ -61,14 +56,14 @@ orden=[9,0,1,2,3,4,5,6,7,8]
 lista_base_sectores=[lista_base_sectores[i] for i in orden] #ordenar los sectores
 lista_base_sectores
 
-df=pd.read_excel('../data/'+lista_base_sectores[0])
+df=pd.read_excel('/data/'+lista_base_sectores[0])
 df.index=[lista_base_sectores[0].replace('wgt_mip97','').replace('.xlsx','') for i in range(df.shape[0])] 
       #de esta forma genero una lista con la cantidad de obs necesarias (cant. de filas) para el indice con el nombre del sector. 
 df
 lista_base_sectores[1:]
 
 for i, elem in enumerate(lista_base_sectores[1:]): #que haga el loop desde la segunda observaciones - recordar la pri. posicion en python es 0
-    df_aux=pd.read_excel('../data/'+lista_base_sectores[1:][i])
+    df_aux=pd.read_excel('/data/'+lista_base_sectores[1:][i])
     print(elem, i)
     df_aux.index=[elem.replace('wgt_mip97','').replace('.xlsx','') for i in range(df_aux.shape[0])] 
     df=pd.concat([df, df_aux])
@@ -82,7 +77,7 @@ df
 
 # In[10]:
 
-df_indec=pd.read_excel('../data/indec.xlsx') #levantar base
+df_indec=pd.read_excel('/data/indec.xlsx') #levantar base
 df_indec.iloc[:4,:] #ver encabezado para decidir que borrar
 df_indec.iloc[1,0]='fecha' #agregar referencia para no eliminarla en el siguiente paso
 
@@ -157,7 +152,7 @@ trade_fig = px.bar(base_sector,
 
 # cargar base
 
-df_indec=pd.read_excel('../data/indec.xlsx', sheet_name='hoja2') #importo base
+df_indec=pd.read_excel('/data/indec.xlsx', sheet_name='hoja2') #importo base
 df_indec=df_indec_prov.iloc[1:,:]
 df_indec['FECHA']=df_indec['FECHA'].astype(int)
 df_indec=df_indec.set_index('FECHA')
@@ -233,7 +228,7 @@ mapa=dbc.NavItem(
 
 # In[15]:
 #cargar base de datos
-df_indec=pd.read_excel('../data/indec.xlsx', sheet_name='hoja3') #importo base
+df_indec=pd.read_excel('/data/indec.xlsx', sheet_name='hoja3') #importo base
 df_indec_empresas=df_indec_empresas.iloc[:,1:8] #selecciono
 df_group_año=df_indec_empresas.groupby(['año']).sum() #agrupo
 df_empresas=df_group_año.melt(ignore_index=False).reset_index() #reshapeo wide to long
